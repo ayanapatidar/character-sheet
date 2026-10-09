@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #2F5D8A;
+  --color-accent: #3F7D58;
+  --color-bg: #EDF2F6;
+  --color-surface: #FFFFFF;
+  --color-text: #1B2A36;
+  --color-text-muted: #4B5F70;
+
+  --font-display: 'Silkscreen', monospace;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --border-width: 2px;
+  --shadow-offset: 4px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+/* group the boxes */
+.panel {
+  --panel-color: var(--color-primary);
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--panel-color);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--panel-color);
+  padding: 1rem;
+}
+
+.panel--accent {
+  --panel-color: var(--color-accent);
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  color: var(--panel-color);
+}
