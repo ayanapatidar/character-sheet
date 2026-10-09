@@ -6,8 +6,9 @@
   --color-text: #1B2A36;
   --color-text-muted: #4B5F70;
 
-  --font-display: 'Silkscreen', monospace;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: 'EB Garamond', Georgia, serif;
+  --font-body: 'Roboto', system-ui, sans-serif;
+  --font-label: 'EB Garamond', Georgia, serif;
 
   --border-width: 2px;
   --shadow-offset: 4px;
@@ -17,16 +18,18 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 h1, h2, h3 {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 600;
+  line-height: 1.15;
   color: var(--color-primary);
 }
 
-/* group the boxes */
+/* boxes together :} */
 .panel {
   --panel-color: var(--color-primary);
   background: var(--color-surface);
@@ -40,7 +43,14 @@ h1, h2, h3 {
 }
 
 .label {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
+  font-family: var(--font-label);
+  font-size: 1.5rem;
+  line-height: 1.8;
   color: var(--panel-color);
+}
+
+.sheet {
+  max-width: 880px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
